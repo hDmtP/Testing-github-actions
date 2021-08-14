@@ -17,6 +17,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
+      - run: echo ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         
       
       
