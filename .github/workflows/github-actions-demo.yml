@@ -18,6 +18,12 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
       - run: echo "look at this = ${env:PATH}"
+      - name: Display the path
+        run: |
+          import os
+          print(os.environ['PATH'])
+          print("hDmtP is learning github actions now")
+        shell: python
         
       
       
